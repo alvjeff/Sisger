@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alteração de domicilio bancario</title>
+    <link rel="stylesheet" href="css/style1.css">
+
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <header>        
+        <div class="cabecalho">
+            <div class="logo flutua-esquerda">
+                <img src="image/logo.png" alt="logo"> 
+            </div>
+           
+            <div class="texto-cabecalho flutua-esquerda">
+                <p>Regimento Olinda</p>
+                <h1>7º Grupo de Artilharia de Campanha</h1>
+                <h3>Exército Brasileiro</h3>
+            </div>
+            <div class="clear"></div>
+        </div>
+       
+    </header>
+
+    <section>
+        <h2>Alteração de domicilio bancário</h2>
+        
+            <label for="sistema">Sistema:</label><br>
+            <select name="sistema" id="sistema">
+                <option value="">--sistema--</option>
+                <option value="SIAPPES">SIAPPES</option>
+                <option value="SIPPES">SIPPES</option>
+            </select><br>
+
+            <label for="post_grad">P/G:</label><br><input type="text" name="graduacao" id="graduacao" required><br>
+
+            <label for="nome">Nome completo:</label><br><input type="text" name="nome" id="nome" required><br>
+
+            <label for="cpf">CPF:</label><br><input type="text" name="cpf" id="cpf" required><br>
+
+            <label for="banco">Banco:</label><br>
+            <select name="banco" id="banco">
+                <option value="BB">001 - BB</option>
+                <option value="SANTANDER">033 - SANTANDER</option>
+                <option value="ITAU">341 - ITAU</option>
+                <option value="CEF">104 - CEF</option>
+            </select><br>
+
+            <label for="agencia">Agencia:</label><br><input type="text" name="agencia" id="agencia" required><br>
+
+            <label for="conta">Conta:</label><br><input type="text" name="conta" id="conta" required><br>
+            
+            
+
+            <button class="botao_nota" onclick="gerarNota_altera_domic_banc()"> Gerar nota</button>
+            <br><br>
+
+            <div class="nota" id="nota">
+                <p>sua nota aqui</p>
+            </div>
+
+
+        
+    </section>
+
+    <footer>
+        <p>&copy;TODOS OS DIREITOS RESERVADOS</p>
+    </footer>
+
+    <script src="js/script1.js"></script>
+</body>
+</html>

@@ -1,0 +1,227 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto';
+}
+body{
+    background-color: white;
+}
+
+/*header{
+    
+}*/
+
+section{
+    padding: 40px 0;
+    
+}
+
+.titulo-login{
+    margin: 20px auto;
+    font-size: 20pt;
+    color: white;
+}
+
+/*inputs do login*/
+.login, #botao-login{
+    display: block;
+    margin: 30px auto;
+    font-size: 15pt;
+    width: 70%;
+    border-radius: 10px;
+    height: 40px;
+    padding: 0 5px;
+}
+#botao-login{
+    background-color: rgb(40, 233, 82);
+}
+
+input[type=button]{
+    background-color:darkgray;
+    padding: 15px;
+    width: 150px;
+    border-radius: 15px;
+    height: 100px;
+    text-decoration: none;
+    margin: 10px;
+}
+
+
+/*-------------------------------------------------------------------------*/
+#imagem-login{
+    border-radius: 15px;
+}
+
+span.botao{
+    display: block;
+}
+.botao_inicial{
+    background-color:darkgray;
+    padding: 15px;
+    width: 150px;
+    border-radius: 15px;
+    height: 100px;
+    text-decoration: none;
+    margin: 10px;
+    cursor: pointer;
+}
+i{
+    font-size: 50px;
+}
+
+.botao_inicial:hover{
+    background-color:darkgreen;
+    transition: 1.5s;
+    color: white;
+    box-shadow: 5px 3px rgb(159, 159, 219);
+    width: 160px;
+    height: 120px;
+}
+
+.botao-nota{
+    background-color:darkgray;
+    padding: 15px;
+    width: 150px;
+    border-radius: 15px;
+    height: 100px;
+    text-decoration: none;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.botao-nota:hover{
+    background-color:darkgreen;
+    transition: 1.5s;
+    color: white;
+}
+
+/*divs-----------------------------------------------------------------------------*/
+.quadrado-central{
+    margin: 0 auto;
+    /*border: 1px solid red;*/
+    width: 80%;
+    
+}
+.logo{
+    background-color: rgb(34, 177, 76);
+    /* linear-gradient(90dg, rgb(34, 177, 76), white);*/
+}
+
+.cabecalho{
+    background-color: rgb(34, 177, 76);
+    padding: 5px 10px;
+}
+
+.texto-cabecalho{
+    margin: 0px 10px;
+    color: aliceblue;
+
+    /*display flex*/
+    /**display: flex;
+    flex-direction: column;
+    justify-content: space-around;*/
+}
+.texto-cabecalho > p{
+    margin: 10px 0;
+}
+.texto-cabecalho > h1{
+    margin: 15px 0;
+}
+
+.flutua-esquerda{
+    float: left;
+    /*border: 1px solid red;*/
+}
+
+.imagem-esquerda{
+    width: 40%;
+    margin: 0 1%;    
+    background-size:cover;    
+}
+
+.quadrado-login{
+    width: 58%;  
+    /*border: 1px solid red;*/
+    
+}
+
+.quadrado-dentro-login{
+    border: 1px solid rgb(164, 236, 55);
+    margin: auto 10%;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    border-radius: 20px;
+    background-image: linear-gradient(green, white);
+}
+
+
+
+/* fim do divs------------------------------------------------------------------*/
+
+
+section{
+    text-align: center;
+    margin: 0 auto;
+    /*border: 1px solid red;*/
+    padding: 0 auto;
+    
+}
+
+form{
+    text-align: left;
+}
+
+section > div{
+    margin: 10px;
+}
+
+.container{
+    padding: 15px;
+    width: 95%;
+    
+    margin: 0 auto;
+}
+
+/*botao do menu principal*/
+a.botao-menu-principal{
+    width: 80px;
+    height: 50px;
+    background-color: aquamarine;
+    display: block;
+    padding: 10px;
+    float: left;
+    margin: 10px;
+}
+
+a.botao-menu-principal:hover{
+    width: 90px;
+    height: 75px;
+    transition: 1.5s;
+}
+/*fim do botao menu principal*/
+
+div.formulario{
+    text-align: left;
+}
+div.nota {
+    width: 760px;
+    border: 1px solid black;
+    margin: 15px auto;
+    padding: 5px;
+    text-align: left;
+}
+footer{
+    text-align: center;
+    background-color:darkseagreen;
+    margin: 15px;
+    padding: 15px;
+    color: aliceblue;
+    
+}
+
+
+/*geral*/
+.clear{
+    clear: both;
+}

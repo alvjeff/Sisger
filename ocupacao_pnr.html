@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCUPAÇÃO DE PNR</title>
+    <link rel="stylesheet" href="css/style1.css">
+
+    <link rel="shortcut icon" href="icons/ico1.ico" type="image/x-icon">
+
+    <script src="https://kit.fontawesome.com/a19119b252.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <header>    
+        <div class="cabecalho">
+            <div class="logo flutua-esquerda">
+                <img src="image/logo.png" alt="logo"> 
+            </div>
+               
+            <div class="texto-cabecalho flutua-esquerda">
+                <p>Regimento Olinda</p>
+                <h1>7º Grupo de Artilharia de Campanha</h1>
+                <h3>Exército Brasileiro</h3>
+            </div>
+            <div class="clear"></div>
+        </div>    
+        
+       
+    </header>
+
+    <section>
+        <h2>Alteração de domicilio bancário</h2>
+
+        <div class="formulario">
+            <div class="campos flutua-esquerda">
+                <label for="sistema">Sistema</label>
+                <select name="sistema" id="sistema" onchange="verificarSistema()">
+                    <option value="SIAPPES">SIPPES</option>
+                    <option value="SIPPES">SIAPPES</option>
+                </select>
+            </div>
+            
+            <div class="campos flutua-direita">
+                <label for="doc_ref">Documento de Referência:</label>
+                <input type="text" name="doc_ref" id="doc_ref" placeholder="Ex: BI 5, de 8/1/2024">
+            </div>
+            
+            <div class="campos flutua-esquerda">
+                <label for="data_ocup">Data de ocupação:</label>
+                <input type="date" name="data_ocup" id="data_ocup" >
+            </div>
+            
+            <div class="campos flutua-direita">
+                <label for="num_pnr">Nr PNR:</label>
+                <input type="text" name="num_pnr" id="num_pnr" >
+            </div>
+            
+            <div class="campos flutua-esquerda">
+                <label for="vila_militar">Vila Militar:</label>
+                <input type="text" name="vila_militar" id="vila_militar">
+            </div>
+            
+            <div class="campos flutua-direita">
+                <label for="post_grad">P/G:</label>
+                <input type="text" name="post_grad" id="post_grad">
+            </div>
+            
+            <div class="campos flutua-esquerda">
+                <label for="cpf" id="label_cpf">CPF:</label>
+                <input type="text" name="cpf" id="cpf" required>
+            </div>
+            
+              
+
+            <!--solucao temporaria, sera feito um codigo automatico pra isso-->
+            <div class="campos flutua-direita">
+                <label for="soldo">Soldo</label>
+                <input type="number" name="soldo" id="soldo">
+            </div>
+
+            <div class="flutua-esquerda w100">
+                <label for="nome">Nome completo:</label>
+                <input type="text" name="nome" id="nome">
+            </div>
+            
+            <button class="botao_nota" onclick="gerarNota_ocupacao_pnr()"> Gerar nota</button>
+           
+            <br><br>
+            <div class="clear"></div>
+           
+        </div>
+
+        
+
+        <!--aqui onde sera escrita a nota-->
+        <div class="nota" id="nota">
+            sua nota aqui
+        </div>
+        
+    </section>
+
+    <hr>
+
+
+    <footer>
+        <p>&copy;TODOS OS DIREITOS RESERVADOS</p>
+    </footer>
+
+    <script src="js/script1.js"></script>
+</body>
+</html>

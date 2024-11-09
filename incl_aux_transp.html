@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUX TRANSP</title>
+    <link rel="stylesheet" href="css/style1.css">
+
+    
+</head>
+<body>
+    <header>        
+        <div class="cabecalho">
+            <div class="logo flutua-esquerda">
+                <img src="image/logo.png" alt="logo"> 
+            </div>
+           
+            <div class="texto-cabecalho flutua-esquerda">
+                <p>Regimento Olinda</p>
+                <h1>7º Grupo de Artilharia de Campanha</h1>
+                <h3>Exército Brasileiro</h3>
+            </div>
+            <div class="clear"></div>
+        </div>
+       
+    </header>
+
+    <section>
+        <h1>INCLUSÃO DE AUXÍLIO TRANSPORTE</h1>
+        <!--<form action="" method=""> -->
+            
+            <label for="nome">Nome completo:</label><br><input type="text" name="nome" id="nome" ><br>
+            <label for="cpf">CPF:</label><br><input type="text" name="cpf" id="cpf"><br>
+                       
+            <label for="graduacao">Graduação</label><br><input type="text" name="graduacao" id="graduacao"><br>
+            
+            <button onclick="gerarNota_aux_transp()"> Gerar nota</button>
+            
+
+            <div class="nota" id="nota">
+
+            </div>
+
+
+        <!--</form>-->
+    </section>
+
+    <footer>
+        <p>&copy;TODOS OS DIREITOS RESERVADOS</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    
+</body>
+</html>

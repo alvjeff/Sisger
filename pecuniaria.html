@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PECUNIARIA</title>
+    <link rel="stylesheet" href="css/style1.css">
+
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <header>        
+        <div class="cabecalho">
+            <div class="logo flutua-esquerda">
+                <img src="image/logo.png" alt="logo"> 
+            </div>
+           
+            <div class="texto-cabecalho flutua-esquerda">
+                <p>Regimento Olinda</p>
+                <h1>7º Grupo de Artilharia de Campanha</h1>
+                <h3>Exército Brasileiro</h3>
+            </div>
+            <div class="clear"></div>
+        </div>
+       
+    </header>
+
+    <section>
+        <form action="" method="post">
+            <label for="data-licencimento">Data de data licenciamento:</label><br><input type="date" name="data-licenciamento" id=""> <br>
+            <label for="nome">Nome completo:</label><br><input type="text" name="nome" id="nome" required><br>
+            <label for="identidade">Identidade:</label><br><input type="text" name="identidade" id="identidade" required><br>
+            <label for="prec">PREC/CP:</label><br><input type="text" name="prec" id="prec"><br>
+            <label for="cpf">CPF:</label><br><input type="text" name="cpf" id="cpf"><br>
+            <label for="banco">Banco:</label><br>
+            <select name="banco" id="banco">
+                <option value="BB">001 - BB</option>
+                <option value="SANTANDER">033 - SANTANDER</option>
+                <option value="ITAU">341 - ITAU</option>
+            </select><br>
+            <label for="agencia">Agencia:</label><br><input type="text" name="agencia" id="agencia"><br>
+            <label for="conta">Conta:</label><br><input type="text" name="conta" id="conta"><br>
+            <label for="graduacao">Graduação</label><br><input type="text" name="graduacao" id="graduacao"><br>
+            <label for="data-praca">Data de praça:</label><br><input type="date" name="data-praca" id="data-praca"><br><br>
+
+            <button onclick="gerarNota_pecuniaria()"> Gerar nota</button>
+            <input type="button" value="Gerar Nota" onclick="gerarNota_pecuniaria()"> <br><br>
+
+            <div class="nota" id="nota">
+
+            </div>
+
+
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy;TODOS OS DIREITOS RESERVADOS</p>
+    </footer>
+</body>
+</html>
