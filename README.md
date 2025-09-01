@@ -11,12 +11,13 @@ Ele foi pensado para uso em SPP, sendo leve, rápido e funcional.
 - Controle de versão via Git/GitHub.
 
 ## Estrutura do Projeto
+```
 sisger/
 ├── backend/ # Código Python
 ├── frontend/ # HTML, CSS, Bootstrap
 ├── README.md # Este arquivo
 └── requirements.txt # Dependências Python
-
+```
 
 ## Próximos passos
 
