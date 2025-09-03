@@ -13,10 +13,22 @@ Ele foi pensado para uso em SPP, sendo leve, rápido e funcional.
 ## Estrutura do Projeto
 ```
 sisger/
-├── backend/ # Código Python
-├── frontend/ # HTML, CSS, Bootstrap
-├── README.md # Este arquivo
-└── requirements.txt # Dependências Python
+|
+├── static/             # Arquivos estáticos do front-end
+|   ├── css/
+|   |   └── style.css   # Estilos principais
+|   ├── js/
+|   |   └── main.js     # Scripts principais
+|   └── img/
+|   
+├── templates/          # Páginas HTML renderizadas pelo Flask
+|   └── index.html      # Página inicial
+|
+├── app.py              # Arquivo principal Flask (rotas, lógica, DB)
+├── README.md           # Este arquivo
+├── requirements.txt # Dependências Python
+└── sisger.db
+
 ```
 
 ## Próximos passos
