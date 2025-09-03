@@ -26,8 +26,8 @@ sisger/
 |
 ├── app.py              # Arquivo principal Flask (rotas, lógica, DB)
 ├── README.md           # Este arquivo
-├── requirements.txt # Dependências Python
-└── sisger.db
+├── requirements.txt    # Dependências Python
+└── sisger.db           # Banco de dados Sqlite
 
 ```
 
