@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sisger - Login</title>
+</head>
+<body>
+    
+    <main class="container-login">
+        <!--lado esquerdo com a imagem-->
+        <div class="imagem"> 
+            <img src="../static/img/regimento_olinda_v2.jpg" alt="">
+        </div>
+        
+        <!--lado direito com o formulário-->
+        <div class="form-login">
+            <!--logo dentro do formulario-->
+            <div class="logo">
+                <img src="" alt="">
+            </div>
+
+            <!--formulario de login-->
+            <form action="/login" method="post">                
+                <div class="campo">
+                    <label for="usuario">Usuario:</label>
+                    <input type="text" id="usuario" placeholder="digite o usuário" required>                
+                </div>
+                <div class="campo">
+                    <label for="senha">Senha:</label>
+                    <input type="password" name="senha" id="senha">
+                </div>
+    
+                <button type="submit">Login</button>
+
+            </form>
+        </div>
+    </main>
+    
+    
+</body>
+</html>
