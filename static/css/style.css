@@ -15,7 +15,8 @@
 
 .imagem{
     background-image: url('../img/imagem_sisger.png');
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
 }
 
